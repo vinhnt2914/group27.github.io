@@ -1,5 +1,7 @@
 :root{
   --blue: #375EFB
+  --lightblue: #9BAFFD
+  --darkblue: #26356D
 }
 
 body{
@@ -33,6 +35,10 @@ body{
   padding: 20px;
 }
 
+.menu div:hover{
+  color: black;
+}
+
 .menu .link{
   display: flex;
   font-size: 20px;
@@ -41,15 +47,22 @@ body{
 }
 
 .logo{
-  margin-left: 50px;
+  margin-left: 30px;
   font-size: 40px;
 font-weight: 700;
+}
+
+.dropdown{
+  width: 600px;
 }
 
 .language{
   position: relative; 
 }
 
+.menu button:hover{
+  color: black;
+}
 .language-list{
   position: absolute;
   left: 0;
@@ -71,20 +84,6 @@ font-weight: 700;
   white-space: nowrap;
   text-decoration: none;
   color: darkgray;
-}
-
-.language.active > .link + .language-list{
-  opacity: 1;
-  transform: translateY(0);
-  pointer-events: auto;
-}
-
-.language.active > .link, link:hover{
-  color: black;
-}
-
-.language-list a:hover{
-  color: var(--blue);
 }
 
 .navbar{
@@ -130,19 +129,10 @@ font-weight: 700;
   white-space: nowrap;
 }
 
-.nav-item.active > .link + .item-list{
-  opacity: 1;
-  transform: translateY(0);
-  pointer-events: auto;
-}
-
-.nav-item.active > .link{
+.nav-item button:hover{
   color: black;
 }
 
-.item-list a:hover{
-  color: var(--blue);
-}
 
 .hero{
   display: block;
@@ -171,14 +161,15 @@ font-weight: 700;
   border: 2px solid lightgray;
 }
 
-
-
-
-
 .hero h1{
   margin-top: 7%;
   font-weight: 400;
 }
 .hero strong{
   color: var(--blue);
+}
+
+.dropdown-menu{
+  height: 150px;
+  overflow-y: auto;
 }

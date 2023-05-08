@@ -22,131 +22,147 @@
     </div>
     <div class="menu">  <!-- Language select / Add post / Sign in button-->
       <div class="language" lang-dropdown>
-        <button class="link" lang-dropdown-button>Language</button>
-        <div class="language-list">
-          <a href="">English</a>
-          <a href="">Tieng Viet</a>
-          <a href="">Deustch</a>
-          <a href="">Espanol</a>
-          <a href="">French</a>
-          <a href="">Dansk</a>
-          <a href="">Italiano </a>
+        <button class="link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" >Language</button>
+        <div class="dropdown-menu">
+          <a href="" class="dropdown-item">English</a>
+          <a href="" class="dropdown-item">Tieng Viet</a>
+          <a href="" class="dropdown-item">Deustch</a>
+          <a href="" class="dropdown-item">Espanol</a>
+          <a href="" class="dropdown-item">French</a>
+          <a href="" class="dropdown-item">Dansk</a>
+          <a href="" class="dropdown-item">Italiano </a>
         </div>
       </div>
       <div class="add-post">
         <button class="link">Add post</button>
       </div>
       <div class="sign-in">
-        <button class="link">Sign in</button>
+        <div class="dropdown-sign-in">
+          <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
+            Sign in
+          </button>
+          <form class="dropdown-menu p-4">
+            <div class="mb-3">
+              <label for="exampleDropdownFormEmail2" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="exampleDropdownFormEmail2" placeholder="email@example.com">
+            </div>
+            <div class="mb-3">
+              <label for="exampleDropdownFormPassword2" class="form-label">Password</label>
+              <input type="password" class="form-control" id="exampleDropdownFormPassword2" placeholder="Password">
+            </div>
+            <div class="mb-3">
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="dropdownCheck2">
+                <label class="form-check-label" for="dropdownCheck2">
+                  Remember me
+                </label>
+              </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Sign in</button>
+            <button type="submit" class="btn btn-primary" style="border: 2px solid black; background-color: white; color: black;">Create account</button>
+          </form>
+        </div>
       </div>
     </div>
   </div>
 
   <div class="navbar"> <!-- Navigation bar under header-->
     <div class="nav-item" nav-dropdown>
-      <button href="" class="link" nav-dropdown-button>Housing</button>
-      <div class="item-list">
-        <a href="">Housing</a>
-        <a href="">Housing swap</a>
-        <a href="">Office</a>
-        <a href="">Rooms</a>
-        <a href="">Storage</a>
-        <a href="">Vacation rentals</a>
-      </div>
+      <button href="" class="link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Housing</button>
+      <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+        <li><button class="dropdown-item" type="button">Housing</button></li>
+        <li><button class="dropdown-item" type="button">Housing swal</button></li>
+        <li><button class="dropdown-item" type="button">Office</button></li>
+        <li><button class="dropdown-item" type="button">Rooms</button></li>
+        <li><button class="dropdown-item" type="button">Storage</button></li>
+        <li><button class="dropdown-item" type="button">Vacation rentals</button></li>
+      </ul>
     </div>
 
     <div class="nav-item" nav-dropdown>
-      <button href="" class="link" nav-dropdown-button>Community</button>
-      <div class="item-list">
-        <a href="">Activities</a>
-        <a href="">Lost & found</a>
-        <a href="">Artists</a>
-        <a href="">Childcare</a>
-        <a href="">Events</a>
-        <a href="">Local news</a>
-      </div>
+      <button href="" class="link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Community</button>
+      <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+        <li><button class="dropdown-item" type="button">Activities</button></li>
+        <li><button class="dropdown-item" type="button">Lost & found</button></li>
+        <li><button class="dropdown-item" type="button">Artists</button></li>
+        <li><button class="dropdown-item" type="button">Childcare</button></li>
+        <li><button class="dropdown-item" type="button">Events</button></li>
+        <li><button class="dropdown-item" type="button">Local news</button></li>
+      </ul>
     </div>
 
     <div class="nav-item" nav-dropdown>
-      <button href="" class="link" nav-dropdown-button>Jobs</button>
-      <div class="item-list">
-        <a href="">Accounting</a>
-        <a href="">Office</a>
-        <a href="">Engineering</a>
-        <a href="">Design</a>
-        <a href="">Science / Biotech</a>
-        <a href="">Customer service</a>
-        <a href="">Education</a>
-        <a href="">Local news</a>
-        <a href="">Food</a>
-        <a href="">Marketing</a>
-        <a href="">Healthcare</a>
-      </div>
+      <button href="" class="link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Jobs</button>
+      <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+        <li><button class="dropdown-item" type="button">Accounting</button></li>
+        <li><button class="dropdown-item" type="button">Office</button></li>
+        <li><button class="dropdown-item" type="button">Engineering</button></li>
+        <li><button class="dropdown-item" type="button">Design</button></li>
+        <li><button class="dropdown-item" type="button">Science / Biotech</button></li>
+        <li><button class="dropdown-item" type="button">Busisness</button></li>
+        <li><button class="dropdown-item" type="button">Customer services</button></li>
+        <li><button class="dropdown-item" type="button">Education</button></li>
+        <li><button class="dropdown-item" type="button">Local news</button></li>
+        <li><button class="dropdown-item" type="button">Education</button></li>
+        <li><button class="dropdown-item" type="button">Education</button></li>
+        <li><button class="dropdown-item" type="button">Education</button></li>
+      </ul>
     </div>
 
     <div class="nav-item" nav-dropdown>
-      <button href="" class="link" nav-dropdown-button>Services</button>
-      <div class="item-list">
-        <a href="">Automotive</a>
-        <a href="">Beauty</a>
-        <a href="">Mobile</a>
-        <a href="">Computer</a>
-        <a href="">Creative</a>
-        <a href="">Farm / Garden</a>
-        <a href="">Financial</a>
-        <a href="">Health</a>
-        <a href="">Household</a>
-        <a href="">Marine</a>
-        <a href="">Pets</a>
-      </div>
+      <button href="" class="link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Services</button>
+      <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+        <li><button class="dropdown-item" type="button">Housing</button></li>
+        <li><button class="dropdown-item" type="button">Community</button></li>
+        <li><button class="dropdown-item" type="button">Jobs</button></li>
+        <li><button class="dropdown-item" type="button">Services</button></li>
+        <li><button class="dropdown-item" type="button">For sale</button></li>
+        <li><button class="dropdown-item" type="button">Discussion</button></li>
+        <li><button class="dropdown-item" type="button">Gigs</button></li>
+        <li><button class="dropdown-item" type="button">Resumes</button></li>
+      </ul>
     </div>
 
     <div class="nav-item" nav-dropdown>
-      <button href="" class="link" nav-dropdown-button>Forsale</button>
-      <div class="item-list">
-        <a href="">Antiques</a>
-        <a href="">Appliances</a>
-        <a href="">Arts / Craft</a>
-        <a href="">Aviation</a>
-        <a href="">Baby / Kids</a>
-        <a href="">Beauty</a>
-        <a href="">Bikes / Bike parts</a>
-        <a href="">Boats / Boat parts</a>
-        <a href="">Books</a>
-        <a href="">Business</a>
-        <a href="">Cell phones</a>
-      </div>
+      <button href="" class="link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Forsale</button>
+      <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+        <li><button class="dropdown-item" type="button">Housing</button></li>
+        <li><button class="dropdown-item" type="button">Community</button></li>
+        <li><button class="dropdown-item" type="button">Jobs</button></li>
+        <li><button class="dropdown-item" type="button">Services</button></li>
+        <li><button class="dropdown-item" type="button">For sale</button></li>
+        <li><button class="dropdown-item" type="button">Discussion</button></li>
+        <li><button class="dropdown-item" type="button">Gigs</button></li>
+        <li><button class="dropdown-item" type="button">Resumes</button></li>
+      </ul>
     </div>
 
     <div class="nav-item" nav-dropdown>
-      <button href="" class="link" nav-dropdown-button>Discussion Forum</button>
-      <div class="item-list">
-        <a href="">Apple</a>
-        <a href="">Arts</a>
-        <a href="">Atheist</a>
-        <a href="">Autos</a>
-        <a href="">Bikes</a>
-        <a href="">Beauty</a>
-        <a href="">Celebs</a>
-        <a href="">Diet</a>
-        <a href="">Divorce</a>
-        <a href="">Housing</a>
-        <a href="">History</a>
-      </div>
+      <button href="" class="link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Discussion Forum</button>
+      <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+        <li><button class="dropdown-item" type="button">Housing</button></li>
+        <li><button class="dropdown-item" type="button">Community</button></li>
+        <li><button class="dropdown-item" type="button">Jobs</button></li>
+        <li><button class="dropdown-item" type="button">Services</button></li>
+        <li><button class="dropdown-item" type="button">For sale</button></li>
+        <li><button class="dropdown-item" type="button">Discussion</button></li>
+        <li><button class="dropdown-item" type="button">Gigs</button></li>
+        <li><button class="dropdown-item" type="button">Resumes</button></li>
+      </ul>
     </div>
 
     <div class="nav-item" nav-dropdown>
-      <button href="" class="link" nav-dropdown-button>Gigs</button>
-      <div class="item-list">
-        <a href="">Computer</a>
-        <a href="">Creatiev</a>
-        <a href="">Crew</a>
-        <a href="">Domestic</a>
-        <a href="">Event</a>
-        <a href="">Labour</a>
-        <a href="">Talent</a>
-        <a href="">Writing</a>
-      </div>
+      <button href="" class="link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Gigs</button>
+      <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+        <li><button class="dropdown-item" type="button">Housing</button></li>
+        <li><button class="dropdown-item" type="button">Community</button></li>
+        <li><button class="dropdown-item" type="button">Jobs</button></li>
+        <li><button class="dropdown-item" type="button">Services</button></li>
+        <li><button class="dropdown-item" type="button">For sale</button></li>
+        <li><button class="dropdown-item" type="button">Discussion</button></li>
+        <li><button class="dropdown-item" type="button">Gigs</button></li>
+        <li><button class="dropdown-item" type="button">Resumes</button></li>
+      </ul>
     </div>
     
     <div class="nav-item" nav-dropdown>
