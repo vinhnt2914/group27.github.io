@@ -53,11 +53,20 @@ body{
   margin-left: 30px;
   font-size: 40px;
 font-weight: 700;
+cursor: pointer;
+}
+
+.logo:hover{
+  color: var(--blue);
 }
 
 
 .language{
   position: relative; 
+}
+
+.language .dropdown-menu a:hover{
+  color: var(--blue);
 }
 
 .menu button:hover{
@@ -90,33 +99,17 @@ font-weight: 700;
   text-decoration: none;
 }
 
-.item-list{
-  position: absolute;
-  left: 0;
-  top: calc(100% + .25rem);
-  background-color: white;
-  padding: .75rem;
-  border-radius: .25rem;
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .1);
-  opacity: 0;
-  pointer-events: none;
-  height: 150px;
-  overflow-y: auto;
-  z-index: 1;
-  transform: translateY(-10px);
-  transition: opacity 150ms ease-in-out, transform 150ms ease-in-out;
-}
-
-.item-list a{
-  color: darkgray;
-  display: block;
-  white-space: nowrap;
+.dropdown-menu{
+  min-width: 100%;
 }
 
 .nav-item button:hover{
   color: black;
 }
 
+.dropdown-menu button:hover{
+  color: var(--blue);
+}
 
 .hero{
   display: block;
@@ -133,7 +126,6 @@ font-weight: 700;
 }
 
 .h-search-bar input{
-
   width: 600px;
   height: 60px;
   border-radius: 15px;
@@ -143,6 +135,10 @@ font-weight: 700;
   position: relative;
   height: 60px;
   border: 2px solid lightgray;
+}
+
+.h-search-bar input:hover{
+  border: 2px solid var(--lightblue);
 }
 
 .hero h1{
@@ -294,4 +290,31 @@ font-weight: 700;
 .contact-us #email-input:hover{
   color: var(--blue);
   border: 2px solid var(--blue);
+}
+
+@media (max-width: 800px){
+  #menu-icon{
+    display: block;
+  }
+  header{
+    padding: 15px 8%;
+  }
+  .navbar{
+    top: 100%;
+    left: 0;
+    right: 0;
+    position: absolute;
+    flex-direction: column;
+    box-shadow: 0px 2px 18px 0 rgb(129, 162, 182 / 20%);
+    transition: all .40s ease;
+  }
+
+  .navbar a{
+    display: block;
+    padding: 1rem;
+    margin: 0.5rem;
+  }
+  .navbar.active{
+    top: 100%;
+  }
 }
