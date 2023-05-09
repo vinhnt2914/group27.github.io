@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="user.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <script src="js/bootstrap.bundle.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Document</title>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+          <a href="">Craigslist</a>
+        </div>
+        <div class="menu">  <!-- Language select / Add post / Sign in button-->
+          <div class="language" lang-dropdown>
+            <button class="link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" >Language</button>
+            <div class="dropdown-menu">
+              <a href="" class="dropdown-item">English</a>
+              <a href="" class="dropdown-item">Tieng Viet</a>
+              <a href="" class="dropdown-item">Deustch</a>
+              <a href="" class="dropdown-item">Espanol</a>
+              <a href="" class="dropdown-item">French</a>
+              <a href="" class="dropdown-item">Dansk</a>
+              <a href="" class="dropdown-item">Italiano </a>
+            </div>
+          </div>
+          <div class="add-post">
+            <button class="link">Add post</button>
+          </div>
+          <div class="sign-in">
+            <div class="dropdown-sign-in">
+              <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
+                Sign in
+              </button>
+              <form class="dropdown-menu p-4 w-25">
+                <div class="mb-3">
+                  <label for="exampleDropdownFormEmail2" class="form-label">Email address</label>
+                  <input type="email" class="form-control" id="exampleDropdownFormEmail2" placeholder="email@example.com">
+                </div>
+                <div class="mb-3">
+                  <label for="exampleDropdownFormPassword2" class="form-label">Password</label>
+                  <input type="password" class="form-control" id="exampleDropdownFormPassword2" placeholder="Password">
+                </div>
+                <div class="mb-3">
+                  <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="dropdownCheck2">
+                    <label class="form-check-label" for="dropdownCheck2">
+                      Remember me
+                    </label>
+                  </div>
+                </div>
+                <button type="submit" class="btn btn-primary">Sign in</button>
+                <button type="submit" class="btn btn-primary" style="border: 2px solid black; background-color: white; color: black;">Create account</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+<section>
+    <div class="container">
+        <div class="row mt-3">
+            <div class="col">
+                <div class="card mb-4">
+                    <div class="card-body text-center">
+                        <img src="web-image/images/avata1.png" alt="" class="rounded-circle img-fluid text-center" style="width: 150px;">
+                        <h5 class="mt-2">John Smith</h5>
+                        <hr>
+                        <p class="mt-2">Seller</p>
+                        <p class="mt-2">Alaska, USA</p>
+                        <div class="d-flex justify-content-center mb-2" style="gap: 10px;">
+                            <button type="button" class="btn btn-primary"><a href="chat.html" style="text-decoration: none; color: white;">Chat with</a></button>
+                            <button type="button" class="btn btn-outline-danger ms-1">Report user</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body text-center">
+                        <h5><Strong>Social</Strong></h5>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">
+                                <p>Email: <a href="#">Johnsmith@gmail.com</a></p>
+                                <p>Phone: <a href="#">+1 142 151 5928</a></p>
+                                <p>Twitter: <a href="#">@Johnsmithh1213</a></p>
+
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col"><Strong>Full name</Strong></div>
+                            <div class="col">Ibantu John Smith</div>
+                        </div>
+                        <hr>
+                        <div class="row">
+                            <div class="col"><Strong>Email</Strong></div>
+                            <div class="col">Johnsmith@gmail.com</div>
+                        </div>
+                        <hr>
+                        <div class="row">
+                            <div class="col"><Strong>Phone</Strong></div>
+                            <div class="col">+1 412 234 1234</div>
+                        </div>
+                        <hr>
+                        <div class="row">
+                            <div class="col"><Strong>Address</Strong></div>
+                            <div class="col">2417 Tongass Ave #111, Ketchikan, Alaska 99901, USA</div>
+                        </div>
+                        <hr>
+                        <div class="row">
+                            <div class="col"><Strong>About me</Strong></div>
+                            <div class="col">I sell random unused stuff from my garage</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mt-4" style="max-width: 540px;">
+                    <div class="row">
+                      <div class="col">
+                        <img src="web-image/images/product-11.jpg" class="img-fluid rounded-start" alt="">
+                      </div>
+                      <div class="col-md-8">
+                        <div class="card-body">
+                          <h5 class="card-title">Most recent product</h5>
+                          <h5 class="card-text"><a href="">Adidas runner</a></h5>
+                          <p class="card-text">I bought this runner from an Adidas Outlet in Alaska like 1 years ago. The conditions is pretty good</p>
+                          <p class="card-text"><a href="" style="color: green; text-decoration: none;">65$</a></p>
+                          <p class="card-text"><small class="text-muted">Last updated 3 hours ago</small></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </div>
+</section>
+    
+
+
+
+</body>
+</html>

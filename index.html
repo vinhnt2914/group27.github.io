@@ -19,7 +19,7 @@
 <body>
   <div class="header">
     <div class="logo">
-      Craigslist
+      <a href="">Craigslist</a>
     </div>
     <div class="menu">  <!-- Language select / Add post / Sign in button-->
       <div class="language" lang-dropdown>
@@ -42,7 +42,7 @@
           <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
             Sign in
           </button>
-          <form class="dropdown-menu p-4">
+          <form class="dropdown-menu p-4 w-25">
             <div class="mb-3">
               <label for="exampleDropdownFormEmail2" class="form-label">Email address</label>
               <input type="email" class="form-control" id="exampleDropdownFormEmail2" placeholder="email@example.com">
@@ -82,8 +82,6 @@
         <li><button class="dropdown-item" type="button">Sublets / temporary</button></li>
         <li><button class="dropdown-item" type="button">Vacation rentals</button></li>
       </ul>
-
-      
     </div>
 
     <div class="nav-item" nav-dropdown>
@@ -240,9 +238,8 @@
             <a href=""><i class="bx bx-heart"></i></a>
           </div>
         </div>
-      </div>
+      </div> 
     </section>
-
     <section class="contact" id="contact">
       <div class="main-contact">
         <div class="contact-content">
@@ -264,13 +261,22 @@
       </div>
       <div class="contact-us">
         <form action="">
+          <h5 style="margin-bottom: 20px;">Contact Us</h5>
           <input type="email" id="email-input" placeholder="name@example.com">
           <input type="submit" id="submit">
         </form>
       </div>
     </section>
+      
+  </div>
+  <div class="chat-btn">
+    <a href="chat.html"><i class="bx bx-message-dots"></i></a>
   </div>
 
 
+  
+
 </body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="static/scripts/responses.js"></script>
 </html>

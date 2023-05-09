@@ -50,19 +50,29 @@ body{
 }
 
 .logo{
-  margin-left: 30px;
+  margin-left: 20px;
   font-size: 40px;
 font-weight: 700;
 cursor: pointer;
 }
 
-.logo:hover{
+.logo a{
+  color: #121212;
+  text-decoration: none;
+}
+
+.logo a:hover{
   color: var(--blue);
 }
 
 
 .language{
   position: relative; 
+}
+
+.language .dropdown-menu{
+  height: 150px;
+  overflow-y: auto;
 }
 
 .language .dropdown-menu a:hover{
@@ -149,8 +159,8 @@ cursor: pointer;
   color: var(--blue);
 }
 
-.dropdown-menu{
-  height: 150px;
+.navbar .dropdown-menu{
+  height: 200px;
   overflow-y: auto;
 }
 
@@ -196,16 +206,12 @@ cursor: pointer;
 
 .box .cart i{
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 35px;
-  height: 35px;
-  background: var(--blue);
-  color: white;
+  top: 10px;
+  left: 20px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  font-size: 18px;
+  font-size: 30px;
 }
 
 .box .like i{
@@ -318,3 +324,17 @@ cursor: pointer;
     top: 100%;
   }
 }
+
+.chat-btn {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+}
+
+.chat-btn i{
+  font-size: 40px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
