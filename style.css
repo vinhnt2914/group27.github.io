@@ -92,34 +92,20 @@ cursor: pointer;
 .navbar{
   background-color: #f3f3f3;
   display: flex;
-  align-items: baseline;
-  padding: .5rem;
+  padding: .75rem;
   gap: 1rem;
   justify-content: space-between;
 }
-.nav-item {
-  position: relative;
+.nav-item {   
   font-size: 20px;
-  padding-bottom: 20px;
-  padding-left: 20px;
-  padding-right: 20px;
+  margin-left: 20px;
 }
+
 
 .nav-item a {
   text-decoration: none;
 }
 
-.dropdown-menu{
-  min-width: 100%;
-}
-
-.nav-item button:hover{
-  color: black;
-}
-
-.dropdown-menu button:hover{
-  color: var(--blue);
-}
 
 .hero{
   display: block;
@@ -159,10 +145,6 @@ cursor: pointer;
   color: var(--blue);
 }
 
-.navbar .dropdown-menu{
-  height: 200px;
-  overflow-y: auto;
-}
 
 
 .container{
