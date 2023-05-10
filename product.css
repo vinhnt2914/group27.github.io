@@ -1,0 +1,90 @@
+:root{
+--blue: #375EFB;
+--lightblue: #9BAFFD;
+--darkblue: #26356D;
+--text-color: #121212;
+--main-font: 2.2rem;
+--p-font: 1.1rem;
+}
+
+body{
+margin: 0;
+font-family: "Times New Roman", "sans-serif";
+}
+
+.header{
+background-color: #f3f3f3;
+display: flex;
+align-items: baseline;
+padding: .5rem;
+gap: 1rem;
+justify-content: space-between;
+}
+
+.link{
+background: none;
+border: none;
+text-decoration: none;
+color: #777;
+cursor: pointer;
+padding: 10px;
+}
+
+.menu{
+display: flex;
+font-size: 20px;
+justify-content: center;
+align-items: center;
+padding: 20px;
+}
+
+.menu div:hover{
+color: black;
+}
+
+.menu .link{
+display: flex;
+font-size: 20px;
+margin-right: 20px;
+align-items: center;
+}
+
+.logo{
+margin-left: 20px;
+font-size: 40px;
+font-weight: 700;
+cursor: pointer;
+}
+
+.logo a{
+color: #121212;
+text-decoration: none;
+}
+
+.logo a:hover{
+color: var(--blue);
+}
+
+
+.language{
+position: relative; 
+}
+
+.language .dropdown-menu{
+height: 150px;
+overflow-y: auto;
+}
+
+.language .dropdown-menu a:hover{
+color: var(--blue);
+}
+
+.menu button:hover{
+color: black;
+}
+
+.language-list a{
+white-space: nowrap;
+text-decoration: none;
+color: darkgray;
+}
