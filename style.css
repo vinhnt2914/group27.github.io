@@ -101,6 +101,9 @@ cursor: pointer;
   margin-left: 20px;
 }
 
+.nav-item button:hover{
+  color: black;
+}
 
 .nav-item a {
   text-decoration: none;

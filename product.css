@@ -88,3 +88,7 @@ white-space: nowrap;
 text-decoration: none;
 color: darkgray;
 }
+
+.star:hover{
+    color: yellow;
+}
