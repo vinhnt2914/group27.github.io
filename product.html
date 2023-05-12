@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="code.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
@@ -21,6 +20,13 @@
         <div class="logo">
           <a href="index.html">Craigslist</a>
         </div>
+        <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+            <li class="breadcrumb-item"><a href="buy.html">Shopping</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Product</li>
+          </ol>
+        </nav>
         <div class="menu">  <!-- Language select / Add post / Sign in button-->
           <div class="language" lang-dropdown>
             <button class="link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" >Language</button>
@@ -72,9 +78,36 @@
               Reply
             </button>
             <div class="dropdown-menu p-3">
-              <li><a class="dropdown-item alert alert-primary" href="#">Email</a></li>
-              <li><a class="dropdown-item alert alert-primary" href="#">Call</a></li>
-              <li><a class="dropdown-item alert alert-primary" href="#">Text</a></li>
+              <div class="email">
+                <a class="btn btn-outline-primary" data-bs-toggle="collapse" href="#collapseEmail" role="button" aria-expanded="false" aria-controls="collapseExample">
+                  Email
+                </a>
+                <div class="collapse" id="collapseEmail">
+                  <div class="card card-body" style="width: 300px;">
+                    <a href="">tungnguyen@gmail.com</a>
+                  </div>
+                </div>
+              </div>
+              <div class="phone mt-2">
+                <a class="btn btn-outline-primary" data-bs-toggle="collapse" href="#collapsePhone" role="button" aria-expanded="false" aria-controls="collapseExample">
+                  Call
+                </a>
+                <div class="collapse" id="collapsePhone">
+                  <div class="card card-body" style="width: 300px;">
+                    <a href="">+1 142 151 5928</a>
+                  </div>
+                </div>
+              </div>       
+              <div class="text mt-2">
+                <a class="btn btn-outline-primary" data-bs-toggle="collapse" href="#collapseText" role="button" aria-expanded="false" aria-controls="collapseExample">
+                  Text
+                </a>
+                <div class="collapse" id="collapseText">
+                  <div class="card card-body" style="width: 300px;">
+                    <a href="" id="liveToastBtn">+1 142 151 5928</a>
+                  </div>
+                </div>
+              </div>
               <li><hr class="dropdown-divider"></li>
               <li><a class="dropdown-item alert alert-success" href="chat.html">Craigschat</a></li>
             </div>
@@ -149,6 +182,19 @@ Contact me at show t.tin l.us
   
     </div>
     
-    
+    <div class="toast-container p-3" style="position: fixed; top: 0px; right: 10px;">
+      <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+        <div class="toast-header">
+          <img src="..." class="rounded me-2" alt="...">
+          <strong class="me-auto">Bootstrap</strong>
+          <small>11 mins ago</small>
+          <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+        </div>
+        <div class="toast-body">
+          Hello, world! This is a toast message.
+        </div>
+      </div>
+    </div>
 </body>
+<script src="script.js"></script>
 </html>

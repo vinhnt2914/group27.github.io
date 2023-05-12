@@ -1,4 +1,11 @@
-
+:root{
+  --blue: #375EFB;
+  --lightblue: #9BAFFD;
+  --darkblue: #26356D;
+  --text-color: #121212;
+  --main-font: 2.2rem;
+  --p-font: 1.1rem;
+  }
 
 .header{
   background-color: #f3f3f3;
