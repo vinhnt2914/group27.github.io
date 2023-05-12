@@ -4,7 +4,6 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="code.js"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
@@ -392,10 +391,10 @@
   <div class="hero">
     <h1 class="text-center"> Find anything you need <br> at <strong>Craigslist</strong></h1>
     <div class="h-search-bar">
-      <form action="#" class="d-flex">
-        <input type="text" class="form-control me-2" id="search-box" placeholder="Search here...">
+      <form action="buy.html " method="get" class="autocomplete" style="display: flex;">
+        <input type="text" name="query" class="form-control" id="myInput" placeholder="Search here..." >
         <button class="btn btn-outline-primary dropdown-toggle me-2" type="button" id="dropdownMenu2" data-bs-toggle="dropdown" 
-        aria-expanded="false" style="border-radius: 15px;">
+        aria-expanded="false" style="border-radius: 15px; margin-left: 10px;">
           All category
         </button>
         <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
@@ -490,6 +489,7 @@
   
 
 </body>
+<script src="script.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="static/scripts/responses.js"></script>
 </html>

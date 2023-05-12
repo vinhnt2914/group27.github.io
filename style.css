@@ -131,7 +131,6 @@ cursor: pointer;
   font-weight: 600;
   font-size: 16px;
   text-transform: capitalize;
-  position: relative;
   height: 60px;
   border: 2px solid lightgray;
 }
@@ -322,4 +321,3 @@ cursor: pointer;
   align-items: center;
   justify-content: center;
 }
-
