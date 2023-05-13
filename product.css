@@ -89,6 +89,6 @@ text-decoration: none;
 color: darkgray;
 }
 
-.star:hover{
-    color: yellow;
+.icons{
+    cursor: pointer;
 }
